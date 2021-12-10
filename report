@@ -1,0 +1,17 @@
+import pyodbc
+import pandas as pd
+import numpy as np
+
+conn_str = (
+    r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
+    r'DBQ=\\rmb-vpr-file02\Ashburton\Support Services\Risk Management\Investment Analytics\Python\take_on\databases\report.accdb;'
+    )
+cnxn = pyodbc.connect(conn_str)
+crsr = cnxn.cursor()
+
+SQL = "SELECT ValuationDate, PortfolioCode, Contribution FROM modified_duration"
+df = pd.read_sql_query(SQL, cnxn)
+cnxn.commit()
+cnxn.close()
+
+df = pd.pivot_table(df,index=['ValuationDate'], columns= ['PortfolioCode'], values = ['Contribution'], aggfunc=np.sum).reset_index()

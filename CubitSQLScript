@@ -1,0 +1,24 @@
+DECLARE @ReportDate DATETIME
+      , @CurveName1 VARCHAR(50)
+      , @CurveName2 VARCHAR(50)
+SET @ReportDate ='07 AUG 2020'
+  , @CurveName1 = 'RMBZERO'
+  , @CurveName2 = 'RMBRealBond' 
+
+SELECT CONVERT(DATE,Date, 110) [CurveDate]
+    , @CurveName1 [Name]
+    , CONVERT(DATE,EndDate, 110) [Date]
+    , BidRate/100.00 [Rate] 
+    FROM IRD250.dbo.RateBasedCURVES
+    WHERE Name = @CurveName1 + CONVERT(VARCHAR(50),@ReportDate,112)
+    
+
+UNION ALL
+
+SELECT CONVERT(DATE,Date, 110) [CurveDate]
+    , @CurveName2 [Name]
+    , CONVERT(DATE,EndDate, 110) [Date]
+    , BidRate/100.00 [Rate] 
+    FROM IRD250.dbo.RateBasedCURVES
+    WHERE Name = @CurveName2 + CONVERT(VARCHAR(50),@ReportDate,112)
+     ORDER BY [CurveDate] ASC, [Name] DESC, [Date] ASC
