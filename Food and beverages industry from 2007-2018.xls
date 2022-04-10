@@ -1,0 +1,6072 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.aftercaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.body
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  vertical-align: top;
+  width: 100%;
+}
+.bycontentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.byline
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.cell
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.container
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.contentfolder
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.contentproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contentprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.contents
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.contenttitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.continued
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.document
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+a:link {
+color:#0000FF
+}
+a:visited {
+color:#800080
+}
+a:active {
+color:#800080
+}
+.errorbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.errorcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.errorcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.extendedpage
+{
+  background-color: #FAFBFE;
+  border: 1pt solid #000000;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.fatalcontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.fatalcontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.folderaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.footer
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footeremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.graph
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.header
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headeremphasis
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #EDF2F9;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrong
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #D8DBD3;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.index
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.indexaction
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.indexprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.indextitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FAFBFE;
+  border-bottom-width: 1px;
+  border-color: #C1C1C1;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.list10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.list3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.list9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem2
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: circle;
+}
+.listitem3
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem4
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem5
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem6
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem7
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem8
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.listitem9
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: square;
+}
+.note
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notebanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.notecontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.notecontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.output
+{
+  background-color: #FAFBFE;
+  border: 1px solid #C1C1C1;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.pageno
+{
+  background-color: #FAFBFE;
+  border-spacing: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.pagesitem
+{
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+  margin-left: 6pt;
+}
+.pagesproclabel
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagesprocname
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.pagestitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.paragraph
+{
+  background-color: #FAFBFE;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.prepage
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.proctitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooteremphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderemphasis
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderempty
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #EDF2F9;
+  border-bottom-width: 1px;
+  border-color: #B0B7BB;
+  border-left-width: 0px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-top-width: 0px;
+  color: #112277;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemfooter9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.systemtitle
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.table
+{
+  border-bottom-width: 0px;
+  border-collapse: collapse;
+  border-color: #C1C1C1;
+  border-left-width: 1px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  background-color: #FAFBFE;
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  color: #000000;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  width: 100%;
+}
+.titlesandfooters
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.usertext
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warnbanner
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.warncontent
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: Arial, 'Albany AMT', Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.warncontentfixed
+{
+  background-color: #FAFBFE;
+  color: #112277;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<div>
+<div align="center">
+<table class="table" cellspacing="0" cellpadding="5" rules="all" frame="box" bordercolor="#C1C1C1" summary="Procedure Print: Data Set WORK.SIS1">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l header" scope="col">H01</th>
+<th class="l header" scope="col">H02</th>
+<th class="l header" scope="col">H03</th>
+<th class="l header" scope="col">H04</th>
+<th class="l header" scope="col">H05</th>
+<th class="l header" scope="col">H06</th>
+<th class="l header" scope="col">H13</th>
+<th class="l header" scope="col">H15</th>
+<th class="l header" scope="col">H17</th>
+<th class="r header" scope="col">H23</th>
+<th class="r header" scope="col">H24</th>
+<th class="l header" scope="col">H25</th>
+<th class="r header" scope="col">Y2007</th>
+<th class="r header" scope="col">Y2009</th>
+<th class="r header" scope="col">Y2012</th>
+<th class="r header" scope="col">Y2015</th>
+<th class="r header" scope="col">Y2018</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINC</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12440</td>
+<td class="r data">17227</td>
+<td class="r data">24496</td>
+<td class="r data">27430</td>
+<td class="r data">33704</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINC</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7619</td>
+<td class="r data">11030</td>
+<td class="r data">13645</td>
+<td class="r data">17989</td>
+<td class="r data">24261</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINC</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6545</td>
+<td class="r data">9103</td>
+<td class="r data">5884</td>
+<td class="r data">10038</td>
+<td class="r data">14320</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINC</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">26604</td>
+<td class="r data">37360</td>
+<td class="r data">44025</td>
+<td class="r data">55457</td>
+<td class="r data">72285</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12212</td>
+<td class="r data">16870</td>
+<td class="r data">23757</td>
+<td class="r data">26889</td>
+<td class="r data">32198</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6925</td>
+<td class="r data">10780</td>
+<td class="r data">13175</td>
+<td class="r data">17913</td>
+<td class="r data">23219</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6035</td>
+<td class="r data">9114</td>
+<td class="r data">5944</td>
+<td class="r data">9811</td>
+<td class="r data">13600</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">25172</td>
+<td class="r data">36764</td>
+<td class="r data">42876</td>
+<td class="r data">54613</td>
+<td class="r data">69017</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">176</td>
+<td class="r data">331</td>
+<td class="r data">609</td>
+<td class="r data">617</td>
+<td class="r data">887</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">140</td>
+<td class="r data">155</td>
+<td class="r data">147</td>
+<td class="r data">206</td>
+<td class="r data">442</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">248</td>
+<td class="r data">198</td>
+<td class="r data">107</td>
+<td class="r data">209</td>
+<td class="r data">274</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOPEN</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total value of opening inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">564</td>
+<td class="r data">684</td>
+<td class="r data">863</td>
+<td class="r data">1032</td>
+<td class="r data">1603</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">205</td>
+<td class="r data">363</td>
+<td class="r data">631</td>
+<td class="r data">878</td>
+<td class="r data">686</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">132</td>
+<td class="r data">179</td>
+<td class="r data">169</td>
+<td class="r data">587</td>
+<td class="r data">507</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">126</td>
+<td class="r data">201</td>
+<td class="r data">165</td>
+<td class="r data">271</td>
+<td class="r data">289</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCLOSE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total value of closing inventories</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">463</td>
+<td class="r data">743</td>
+<td class="r data">965</td>
+<td class="r data">1736</td>
+<td class="r data">1482</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">257</td>
+<td class="r data">388</td>
+<td class="r data">761</td>
+<td class="r data">802</td>
+<td class="r data">1305</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">687</td>
+<td class="r data">273</td>
+<td class="r data">492</td>
+<td class="r data">457</td>
+<td class="r data">1107</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">387</td>
+<td class="r data" nowrap>-9</td>
+<td class="r data" nowrap>-2</td>
+<td class="r data">289</td>
+<td class="r data">735</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROF</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Net profit or loss before tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1331</td>
+<td class="r data">652</td>
+<td class="r data">1251</td>
+<td class="r data">1548</td>
+<td class="r data">3147</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCENEW</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">600</td>
+<td class="r data">526</td>
+<td class="r data">573</td>
+<td class="r data">760</td>
+<td class="r data">868</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCENEW</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">285</td>
+<td class="r data">801</td>
+<td class="r data">796</td>
+<td class="r data">1022</td>
+<td class="r data">1327</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCENEW</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">467</td>
+<td class="r data">162</td>
+<td class="r data">106</td>
+<td class="r data">155</td>
+<td class="r data">159</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCENEW</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1352</td>
+<td class="r data">1489</td>
+<td class="r data">1475</td>
+<td class="r data">1937</td>
+<td class="r data">2354</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">133</td>
+<td class="r data">264</td>
+<td class="r data">523</td>
+<td class="r data">601</td>
+<td class="r data">945</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">584</td>
+<td class="r data">175</td>
+<td class="r data">338</td>
+<td class="r data">271</td>
+<td class="r data">814</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">297</td>
+<td class="r data" nowrap>-37</td>
+<td class="r data" nowrap>-26</td>
+<td class="r data">228</td>
+<td class="r data">596</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFAFTER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Net profit or loss after tax</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1014</td>
+<td class="r data">402</td>
+<td class="r data">835</td>
+<td class="r data">1100</td>
+<td class="r data">2355</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12092</td>
+<td class="r data">16985</td>
+<td class="r data">23916</td>
+<td class="r data">27104</td>
+<td class="r data">33249</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7474</td>
+<td class="r data">10872</td>
+<td class="r data">13444</td>
+<td class="r data">17649</td>
+<td class="r data">23777</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6439</td>
+<td class="r data">8435</td>
+<td class="r data">5820</td>
+<td class="r data">9896</td>
+<td class="r data">13294</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTURN</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Turnover</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">26005</td>
+<td class="r data">36292</td>
+<td class="r data">43180</td>
+<td class="r data">54649</td>
+<td class="r data">70320</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFMAR</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1.1</td>
+<td class="r data">1.6</td>
+<td class="r data">2.2</td>
+<td class="r data">2.2</td>
+<td class="r data">2.8</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFMAR</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7.8</td>
+<td class="r data">1.6</td>
+<td class="r data">2.5</td>
+<td class="r data">1.5</td>
+<td class="r data">3.4</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFMAR</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4.6</td>
+<td class="r data" nowrap>-0.4</td>
+<td class="r data" nowrap>-0.4</td>
+<td class="r data">2.3</td>
+<td class="r data">4.5</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPROFMAR</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Profit margin</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3.9</td>
+<td class="r data">1.1</td>
+<td class="r data">1.9</td>
+<td class="r data">2</td>
+<td class="r data">3.3</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSALESSERV</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Sales of goods and service rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12088</td>
+<td class="r data">16930</td>
+<td class="r data">23833</td>
+<td class="r data">27064</td>
+<td class="r data">33245</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSALESSERV</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Sales of goods and service rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7405</td>
+<td class="r data">10752</td>
+<td class="r data">13242</td>
+<td class="r data">17365</td>
+<td class="r data">23458</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSALESSERV</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Sales of goods and service rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6437</td>
+<td class="r data">8407</td>
+<td class="r data">5810</td>
+<td class="r data">9885</td>
+<td class="r data">13289</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSALESSERV</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Sales of goods and service rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">25930</td>
+<td class="r data">36089</td>
+<td class="r data">42885</td>
+<td class="r data">54314</td>
+<td class="r data">69992</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Rental and leasing income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4</td>
+<td class="r data">55</td>
+<td class="r data">82</td>
+<td class="r data">40</td>
+<td class="r data">4</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Rental and leasing income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">69</td>
+<td class="r data">120</td>
+<td class="r data">202</td>
+<td class="r data">284</td>
+<td class="r data">319</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Rental and leasing income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2</td>
+<td class="r data">28</td>
+<td class="r data">11</td>
+<td class="r data">11</td>
+<td class="r data">5</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIRENT</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Rental and leasing income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">75</td>
+<td class="r data">203</td>
+<td class="r data">295</td>
+<td class="r data">335</td>
+<td class="r data">328</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINTRE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">46</td>
+<td class="r data">48</td>
+<td class="r data">52</td>
+<td class="r data">91</td>
+<td class="r data">123</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINTRE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">22</td>
+<td class="r data">44</td>
+<td class="r data">46</td>
+<td class="r data">56</td>
+<td class="r data">66</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINTRE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">39</td>
+<td class="r data">25</td>
+<td class="r data">10</td>
+<td class="r data">20</td>
+<td class="r data">66</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINTRE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Interest received</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">107</td>
+<td class="r data">117</td>
+<td class="r data">108</td>
+<td class="r data">167</td>
+<td class="r data">255</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHER</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Other income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">302</td>
+<td class="r data">194</td>
+<td class="r data">529</td>
+<td class="r data">235</td>
+<td class="r data">332</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHER</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Other income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">123</td>
+<td class="r data">114</td>
+<td class="r data">155</td>
+<td class="r data">284</td>
+<td class="r data">418</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHER</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Other income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">67</td>
+<td class="r data">643</td>
+<td class="r data">53</td>
+<td class="r data">122</td>
+<td class="r data">960</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Other income</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">492</td>
+<td class="r data">951</td>
+<td class="r data">737</td>
+<td class="r data">641</td>
+<td class="r data">1710</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFIVE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Income of the 5 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">894</td>
+<td class="r data">819</td>
+<td class="r data">2107</td>
+<td class="r data">3209</td>
+<td class="r data">3278</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFIVE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Income of the 5 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1384</td>
+<td class="r data">2561</td>
+<td class="r data">3671</td>
+<td class="r data">4597</td>
+<td class="r data">6355</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFIVE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Income of the 5 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3171</td>
+<td class="r data">4703</td>
+<td class="r data">1936</td>
+<td class="r data">1622</td>
+<td class="r data">6376</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFIVE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Income of the 5 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3685</td>
+<td class="r data">5499</td>
+<td class="r data">4931</td>
+<td class="r data">5481</td>
+<td class="r data">10283</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRFIVE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Relative contribution of the 5 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7.2</td>
+<td class="r data">4.8</td>
+<td class="r data">8.6</td>
+<td class="r data">10.7</td>
+<td class="r data">9.7</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRFIVE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Relative contribution of the 5 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">18.2</td>
+<td class="r data">23.2</td>
+<td class="r data">26.9</td>
+<td class="r data">26.4</td>
+<td class="r data">26.2</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRFIVE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Relative contribution of the 5 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">48.4</td>
+<td class="r data">51.7</td>
+<td class="r data">32.9</td>
+<td class="r data">22.8</td>
+<td class="r data">44.5</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRFIVE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Relative contribution of the 5 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">13.9</td>
+<td class="r data">15</td>
+<td class="r data">11.2</td>
+<td class="r data">10.1</td>
+<td class="r data">14.2</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITEN</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Income of the 10 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1144</td>
+<td class="r data">1119</td>
+<td class="r data">2768</td>
+<td class="r data">4196</td>
+<td class="r data">4051</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITEN</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Income of the 10 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2166</td>
+<td class="r data">3643</td>
+<td class="r data">5253</td>
+<td class="r data">6835</td>
+<td class="r data">9366</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITEN</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Income of the 10 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3783</td>
+<td class="r data">5752</td>
+<td class="r data">2507</td>
+<td class="r data">2444</td>
+<td class="r data">7911</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITEN</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Income of the 10 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4953</td>
+<td class="r data">7281</td>
+<td class="r data">7088</td>
+<td class="r data">8268</td>
+<td class="r data">14196</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTEN</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Relative contribution of the 10 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">9.2</td>
+<td class="r data">6.5</td>
+<td class="r data">11.3</td>
+<td class="r data">14</td>
+<td class="r data">12</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTEN</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Relative contribution of the 10 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">28.4</td>
+<td class="r data">33</td>
+<td class="r data">38.5</td>
+<td class="r data">39.3</td>
+<td class="r data">38.6</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTEN</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Relative contribution of the 10 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">57.8</td>
+<td class="r data">63.2</td>
+<td class="r data">42.6</td>
+<td class="r data">34.4</td>
+<td class="r data">55.2</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTEN</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Relative contribution of the 10 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">18.6</td>
+<td class="r data">20</td>
+<td class="r data">16.1</td>
+<td class="r data">15.2</td>
+<td class="r data">19.6</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITWENTY</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Income of the 20 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1496</td>
+<td class="r data">1535</td>
+<td class="r data">3699</td>
+<td class="r data">5401</td>
+<td class="r data">5030</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITWENTY</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Income of the 20 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2771</td>
+<td class="r data">4588</td>
+<td class="r data">6550</td>
+<td class="r data">8358</td>
+<td class="r data">11933</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITWENTY</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Income of the 20 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4256</td>
+<td class="r data">6239</td>
+<td class="r data">2954</td>
+<td class="r data">3175</td>
+<td class="r data">9282</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FITWENTY</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Income of the 20 largest enterprises</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6425</td>
+<td class="r data">9589</td>
+<td class="r data">9730</td>
+<td class="r data">11697</td>
+<td class="r data">19388</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTWENTY</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Relative contribution of the 20 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12</td>
+<td class="r data">8.9</td>
+<td class="r data">15.1</td>
+<td class="r data">18</td>
+<td class="r data">14.9</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTWENTY</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Relative contribution of the 20 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">36.4</td>
+<td class="r data">41.6</td>
+<td class="r data">48</td>
+<td class="r data">48</td>
+<td class="r data">49.2</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTWENTY</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Relative contribution of the 20 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">65</td>
+<td class="r data">68.5</td>
+<td class="r data">50.2</td>
+<td class="r data">44.7</td>
+<td class="r data">64.8</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FRTWENTY</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Relative contribution of the 20 largest enterprises (%)</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current</td>
+<td class="l data">Percent</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">24.2</td>
+<td class="r data">25.7</td>
+<td class="r data">22.1</td>
+<td class="r data">21.4</td>
+<td class="r data">26.8</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">5365</td>
+<td class="r data">8015</td>
+<td class="r data">11626</td>
+<td class="r data">12863</td>
+<td class="r data">14638</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3640</td>
+<td class="r data">5732</td>
+<td class="r data">6404</td>
+<td class="r data">8716</td>
+<td class="r data">11125</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3266</td>
+<td class="r data">5263</td>
+<td class="r data">3346</td>
+<td class="r data">6155</td>
+<td class="r data">7580</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURCH</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12271</td>
+<td class="r data">19010</td>
+<td class="r data">21376</td>
+<td class="r data">27734</td>
+<td class="r data">33343</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSAL</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2285</td>
+<td class="r data">3300</td>
+<td class="r data">5204</td>
+<td class="r data">5814</td>
+<td class="r data">7396</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSAL</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1020</td>
+<td class="r data">1540</td>
+<td class="r data">2101</td>
+<td class="r data">2806</td>
+<td class="r data">3724</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSAL</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1619</td>
+<td class="r data">1778</td>
+<td class="r data">1381</td>
+<td class="r data">2188</td>
+<td class="r data">3541</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FSAL</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Salaries and wages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4924</td>
+<td class="r data">6618</td>
+<td class="r data">8686</td>
+<td class="r data">10808</td>
+<td class="r data">14661</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FADV</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Advertising</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">332</td>
+<td class="r data">368</td>
+<td class="r data">511</td>
+<td class="r data">486</td>
+<td class="r data">462</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FADV</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Advertising</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">203</td>
+<td class="r data">399</td>
+<td class="r data">451</td>
+<td class="r data">492</td>
+<td class="r data">1014</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FADV</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Advertising</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">27</td>
+<td class="r data">31</td>
+<td class="r data">35</td>
+<td class="r data">23</td>
+<td class="r data">33</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FADV</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Advertising</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">562</td>
+<td class="r data">798</td>
+<td class="r data">997</td>
+<td class="r data">1001</td>
+<td class="r data">1509</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FWATERELEC</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Water and electricity</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">197</td>
+<td class="r data">278</td>
+<td class="r data">501</td>
+<td class="r data">682</td>
+<td class="r data">1103</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FWATERELEC</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Water and electricity</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">114</td>
+<td class="r data">174</td>
+<td class="r data">350</td>
+<td class="r data">411</td>
+<td class="r data">804</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FWATERELEC</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Water and electricity</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">37</td>
+<td class="r data">55</td>
+<td class="r data">84</td>
+<td class="r data">93</td>
+<td class="r data">108</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FWATERELEC</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Water and electricity</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">348</td>
+<td class="r data">507</td>
+<td class="r data">935</td>
+<td class="r data">1186</td>
+<td class="r data">2015</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEQUIP</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Rental of plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">81</td>
+<td class="r data">222</td>
+<td class="r data">211</td>
+<td class="r data">262</td>
+<td class="r data">320</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEQUIP</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Rental of plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">10</td>
+<td class="r data">133</td>
+<td class="r data">66</td>
+<td class="r data">120</td>
+<td class="r data">144</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEQUIP</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Rental of plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">177</td>
+<td class="r data">138</td>
+<td class="r data">86</td>
+<td class="r data">52</td>
+<td class="r data">79</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEQUIP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Rental of plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">268</td>
+<td class="r data">493</td>
+<td class="r data">363</td>
+<td class="r data">434</td>
+<td class="r data">543</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXPINT</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">96</td>
+<td class="r data">201</td>
+<td class="r data">167</td>
+<td class="r data">214</td>
+<td class="r data">318</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXPINT</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">64</td>
+<td class="r data">219</td>
+<td class="r data">212</td>
+<td class="r data">276</td>
+<td class="r data">251</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXPINT</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">54</td>
+<td class="r data">182</td>
+<td class="r data">23</td>
+<td class="r data">51</td>
+<td class="r data">144</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEXPINT</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Interest paid</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">214</td>
+<td class="r data">602</td>
+<td class="r data">402</td>
+<td class="r data">541</td>
+<td class="r data">713</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FELAND</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Rental of land, buildings and other structures</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1100</td>
+<td class="r data">1240</td>
+<td class="r data">1505</td>
+<td class="r data">1650</td>
+<td class="r data">2511</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FELAND</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Rental of land, buildings and other structures</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">453</td>
+<td class="r data">478</td>
+<td class="r data">737</td>
+<td class="r data">1182</td>
+<td class="r data">1268</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FELAND</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Rental of land, buildings and other structures</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">148</td>
+<td class="r data">138</td>
+<td class="r data">225</td>
+<td class="r data">174</td>
+<td class="r data">260</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FELAND</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Rental of land, buildings and other structures</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1701</td>
+<td class="r data">1856</td>
+<td class="r data">2467</td>
+<td class="r data">3006</td>
+<td class="r data">4039</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2756</td>
+<td class="r data">3246</td>
+<td class="r data">4032</td>
+<td class="r data">4858</td>
+<td class="r data">5354</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1421</td>
+<td class="r data">2105</td>
+<td class="r data">2854</td>
+<td class="r data">3751</td>
+<td class="r data">4736</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">707</td>
+<td class="r data">1529</td>
+<td class="r data">764</td>
+<td class="r data">1051</td>
+<td class="r data">1795</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FEOTHER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Other expenditure</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4884</td>
+<td class="r data">6880</td>
+<td class="r data">7650</td>
+<td class="r data">9659</td>
+<td class="r data">11885</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNLAND</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Capital expenditure on new land, buildings and construction works</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">14</td>
+<td class="r data">61</td>
+<td class="r data">46</td>
+<td class="r data">128</td>
+<td class="r data">182</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNLAND</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Capital expenditure on new land, buildings and construction works</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">42</td>
+<td class="r data">187</td>
+<td class="r data">224</td>
+<td class="r data">184</td>
+<td class="r data">319</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNLAND</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Capital expenditure on new land, buildings and construction works</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6</td>
+<td class="r data">5</td>
+<td class="r data">13</td>
+<td class="r data">7</td>
+<td class="r data">43</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNLAND</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new land, buildings and construction works</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">62</td>
+<td class="r data">253</td>
+<td class="r data">283</td>
+<td class="r data">319</td>
+<td class="r data">544</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNCOMP</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Capital expenditure on new computers and computer software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">238</td>
+<td class="r data">25</td>
+<td class="r data">41</td>
+<td class="r data">61</td>
+<td class="r data">62</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNCOMP</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Capital expenditure on new computers and computer software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">36</td>
+<td class="r data">38</td>
+<td class="r data">30</td>
+<td class="r data">24</td>
+<td class="r data">105</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNCOMP</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Capital expenditure on new computers and computer software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">108</td>
+<td class="r data">9</td>
+<td class="r data">3</td>
+<td class="r data">16</td>
+<td class="r data">33</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNCOMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new computers and computer software</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">382</td>
+<td class="r data">72</td>
+<td class="r data">74</td>
+<td class="r data">101</td>
+<td class="r data">200</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNVEH</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Capital expenditure on new motor vehicles</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">120</td>
+<td class="r data">34</td>
+<td class="r data">58</td>
+<td class="r data">48</td>
+<td class="r data">50</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNVEH</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Capital expenditure on new motor vehicles</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">38</td>
+<td class="r data">51</td>
+<td class="r data">37</td>
+<td class="r data">158</td>
+<td class="r data">19</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNVEH</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Capital expenditure on new motor vehicles</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">51</td>
+<td class="r data">27</td>
+<td class="r data">44</td>
+<td class="r data">35</td>
+<td class="r data">15</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNVEH</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new motor vehicles</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">209</td>
+<td class="r data">112</td>
+<td class="r data">139</td>
+<td class="r data">241</td>
+<td class="r data">84</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNPLANT</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Capital expenditure on new plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">214</td>
+<td class="r data">302</td>
+<td class="r data">331</td>
+<td class="r data">332</td>
+<td class="r data">532</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNPLANT</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Capital expenditure on new plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">166</td>
+<td class="r data">405</td>
+<td class="r data">355</td>
+<td class="r data">563</td>
+<td class="r data">746</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNPLANT</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Capital expenditure on new plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">299</td>
+<td class="r data">77</td>
+<td class="r data">34</td>
+<td class="r data">90</td>
+<td class="r data">59</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNPLANT</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on new plant, machinery and equipment</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">679</td>
+<td class="r data">784</td>
+<td class="r data">720</td>
+<td class="r data">985</td>
+<td class="r data">1337</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNOTHER</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Capital expenditure on other new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">14</td>
+<td class="r data">104</td>
+<td class="r data">97</td>
+<td class="r data">191</td>
+<td class="r data">42</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNOTHER</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Capital expenditure on other new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3</td>
+<td class="r data">120</td>
+<td class="r data">150</td>
+<td class="r data">91</td>
+<td class="r data">138</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNOTHER</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Capital expenditure on other new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3</td>
+<td class="r data">44</td>
+<td class="r data">12</td>
+<td class="r data">9</td>
+<td class="r data">9</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCNOTHER</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Capital expenditure on other new assets</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">20</td>
+<td class="r data">268</td>
+<td class="r data">259</td>
+<td class="r data">291</td>
+<td class="r data">189</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFEMALE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">60440</td>
+<td class="r data">60079</td>
+<td class="r data">65422</td>
+<td class="r data">55215</td>
+<td class="r data">60690</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFEMALE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">20342</td>
+<td class="r data">30024</td>
+<td class="r data">32613</td>
+<td class="r data">31512</td>
+<td class="r data">37337</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFEMALE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">32810</td>
+<td class="r data">26510</td>
+<td class="r data">14214</td>
+<td class="r data">18661</td>
+<td class="r data">26529</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFEMALE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">113592</td>
+<td class="r data">116613</td>
+<td class="r data">112249</td>
+<td class="r data">105388</td>
+<td class="r data">124556</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FMALE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">32234</td>
+<td class="r data">37088</td>
+<td class="r data">43700</td>
+<td class="r data">40575</td>
+<td class="r data">42646</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FMALE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">14084</td>
+<td class="r data">14871</td>
+<td class="r data">17091</td>
+<td class="r data">19434</td>
+<td class="r data">19787</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FMALE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">21463</td>
+<td class="r data">17531</td>
+<td class="r data">11623</td>
+<td class="r data">13162</td>
+<td class="r data">18427</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FMALE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">67781</td>
+<td class="r data">69490</td>
+<td class="r data">72414</td>
+<td class="r data">73171</td>
+<td class="r data">80860</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">92674</td>
+<td class="r data">97167</td>
+<td class="r data">109122</td>
+<td class="r data">95789</td>
+<td class="r data">103336</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">34426</td>
+<td class="r data">44895</td>
+<td class="r data">49704</td>
+<td class="r data">50946</td>
+<td class="r data">57121</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">54273</td>
+<td class="r data">44041</td>
+<td class="r data">25837</td>
+<td class="r data">31823</td>
+<td class="r data">44954</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTEMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">181373</td>
+<td class="r data">186103</td>
+<td class="r data">184663</td>
+<td class="r data">178558</td>
+<td class="r data">205411</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFULLTIMEMP</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Full-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">94882</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFULLTIMEMP</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Full-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">47160</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFULLTIMEMP</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Full-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">43040</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FFULLTIMEMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Full-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">185082</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPARTTIMEMP</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Part-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">8453</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPARTTIMEMP</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Part-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">9967</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPARTTIMEMP</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Part-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">1916</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPARTTIMEMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Part-time employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">20336</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMFEM</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Permanent female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">48258</td>
+<td class="r data">49828</td>
+<td class="r data">56627</td>
+<td class="r data">35868</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMFEM</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Permanent female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">18645</td>
+<td class="r data">27468</td>
+<td class="r data">30025</td>
+<td class="r data">17787</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMFEM</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Permanent female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">25734</td>
+<td class="r data">21157</td>
+<td class="r data">12232</td>
+<td class="r data">11010</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMFEM</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Permanent female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">92637</td>
+<td class="r data">98453</td>
+<td class="r data">98884</td>
+<td class="r data">64665</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMMALE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Permanent male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">23249</td>
+<td class="r data">29876</td>
+<td class="r data">37389</td>
+<td class="r data">49765</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMMALE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Permanent male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12520</td>
+<td class="r data">13584</td>
+<td class="r data">15800</td>
+<td class="r data">28155</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMMALE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Permanent male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">17955</td>
+<td class="r data">13471</td>
+<td class="r data">9571</td>
+<td class="r data">15422</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPERMMALE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Permanent male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">53724</td>
+<td class="r data">56931</td>
+<td class="r data">62760</td>
+<td class="r data">93342</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTPERM</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total permanent employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">71507</td>
+<td class="r data">79704</td>
+<td class="r data">94016</td>
+<td class="r data">85632</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTPERM</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total permanent employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">31165</td>
+<td class="r data">41052</td>
+<td class="r data">45825</td>
+<td class="r data">45942</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTPERM</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total permanent employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">43689</td>
+<td class="r data">34628</td>
+<td class="r data">21801</td>
+<td class="r data">26432</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTPERM</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total permanent employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">146361</td>
+<td class="r data">155384</td>
+<td class="r data">161642</td>
+<td class="r data">158006</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPFEM</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Temporary female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2717</td>
+<td class="r data">3806</td>
+<td class="r data">3894</td>
+<td class="r data">2499</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPFEM</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Temporary female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">751</td>
+<td class="r data">744</td>
+<td class="r data">929</td>
+<td class="r data">2504</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPFEM</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Temporary female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1063</td>
+<td class="r data">3248</td>
+<td class="r data">713</td>
+<td class="r data">2291</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPFEM</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Temporary female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4531</td>
+<td class="r data">7798</td>
+<td class="r data">5536</td>
+<td class="r data">7294</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPMALE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Temporary male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2674</td>
+<td class="r data">2098</td>
+<td class="r data">2040</td>
+<td class="r data">2414</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPMALE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Temporary male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">417</td>
+<td class="r data">312</td>
+<td class="r data">488</td>
+<td class="r data">933</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPMALE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Temporary male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">126</td>
+<td class="r data">2267</td>
+<td class="r data">545</td>
+<td class="r data">1254</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTEMPMALE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Temporary male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3217</td>
+<td class="r data">4677</td>
+<td class="r data">3073</td>
+<td class="r data">4601</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTTEMP</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total temporary employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">5391</td>
+<td class="r data">5904</td>
+<td class="r data">5934</td>
+<td class="r data">4913</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTTEMP</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total temporary employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1168</td>
+<td class="r data">1056</td>
+<td class="r data">1416</td>
+<td class="r data">3437</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTTEMP</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total temporary employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1189</td>
+<td class="r data">5515</td>
+<td class="r data">1259</td>
+<td class="r data">3545</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTTEMP</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total temporary employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7748</td>
+<td class="r data">12475</td>
+<td class="r data">8609</td>
+<td class="r data">11895</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASFEM</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Casual female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">9465</td>
+<td class="r data">6445</td>
+<td class="r data">4902</td>
+<td class="r data">2951</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASFEM</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Casual female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">946</td>
+<td class="r data">1812</td>
+<td class="r data">1659</td>
+<td class="r data">853</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASFEM</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Casual female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6013</td>
+<td class="r data">2105</td>
+<td class="r data">1271</td>
+<td class="r data">948</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASFEM</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Casual female employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">16424</td>
+<td class="r data">10362</td>
+<td class="r data">7832</td>
+<td class="r data">4752</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASMALE</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Casual male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6311</td>
+<td class="r data">5114</td>
+<td class="r data">4270</td>
+<td class="r data">2293</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASMALE</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Casual male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1147</td>
+<td class="r data">975</td>
+<td class="r data">803</td>
+<td class="r data">714</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASMALE</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Casual male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3382</td>
+<td class="r data">1793</td>
+<td class="r data">1507</td>
+<td class="r data">898</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FCASMALE</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Casual male employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">10840</td>
+<td class="r data">7882</td>
+<td class="r data">6580</td>
+<td class="r data">3905</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTCAS</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total casual employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">15776</td>
+<td class="r data">11559</td>
+<td class="r data">9172</td>
+<td class="r data">5244</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTCAS</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total casual employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2093</td>
+<td class="r data">2787</td>
+<td class="r data">2463</td>
+<td class="r data">1567</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTCAS</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total casual employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">9395</td>
+<td class="r data">3898</td>
+<td class="r data">2778</td>
+<td class="r data">1846</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FTOTCAS</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total casual employees</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">27264</td>
+<td class="r data">18244</td>
+<td class="r data">14413</td>
+<td class="r data">8657</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFOOD</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of income from food and snacks</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">9432</td>
+<td class="r data">12775</td>
+<td class="r data">16548</td>
+<td class="r data">20741</td>
+<td class="r data">25780</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFOOD</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of income from food and snacks</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6649</td>
+<td class="r data">9006</td>
+<td class="r data">12376</td>
+<td class="r data">15851</td>
+<td class="r data">21551</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFOOD</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of income from food and snacks</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">4825</td>
+<td class="r data">5850</td>
+<td class="r data">1310</td>
+<td class="r data">8221</td>
+<td class="r data">10647</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIFOOD</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of income from food and snacks</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">20906</td>
+<td class="r data">28316</td>
+<td class="r data">30234</td>
+<td class="r data">44813</td>
+<td class="r data">57978</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINONALC</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of income from non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1159</td>
+<td class="r data">1570</td>
+<td class="r data">2322</td>
+<td class="r data">2549</td>
+<td class="r data">3318</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINONALC</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of income from non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">525</td>
+<td class="r data">711</td>
+<td class="r data">767</td>
+<td class="r data">1407</td>
+<td class="r data">1614</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINONALC</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of income from non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">618</td>
+<td class="r data">837</td>
+<td class="r data">466</td>
+<td class="r data">219</td>
+<td class="r data">224</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FINONALC</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of income from non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2302</td>
+<td class="r data">3118</td>
+<td class="r data">3555</td>
+<td class="r data">4175</td>
+<td class="r data">5156</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIALC</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of income from alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1326</td>
+<td class="r data">2319</td>
+<td class="r data">2104</td>
+<td class="r data">1263</td>
+<td class="r data">4027</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIALC</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of income from alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">194</td>
+<td class="r data">81</td>
+<td class="r data">48</td>
+<td class="r data">22</td>
+<td class="r data">124</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIALC</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of income from alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">754</td>
+<td class="r data">1202</td>
+<td class="r data">1214</td>
+<td class="r data">2982</td>
+<td class="r data">1705</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIALC</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of income from alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2274</td>
+<td class="r data">3602</td>
+<td class="r data">3366</td>
+<td class="r data">4267</td>
+<td class="r data">5856</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHERSALES</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of income from other sales</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">137</td>
+<td class="r data">9</td>
+<td class="r data">229</td>
+<td class="r data">99</td>
+<td class="r data">49</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHERSALES</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of income from other sales</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">21</td>
+<td class="r data">942</td>
+<td class="r data">22</td>
+<td class="r data">55</td>
+<td class="r data">97</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHERSALES</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of income from other sales</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">203</td>
+<td class="r data">118</td>
+<td class="r data">85</td>
+<td class="r data">15</td>
+<td class="r data">17</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIOTHERSALES</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of income from other sales</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">361</td>
+<td class="r data">384</td>
+<td class="r data">336</td>
+<td class="r data">169</td>
+<td class="r data">163</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURFOOD</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of purchases of food</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3861</td>
+<td class="r data">5582</td>
+<td class="r data">8865</td>
+<td class="r data">8971</td>
+<td class="r data">10011</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURFOOD</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of purchases of food</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3070</td>
+<td class="r data">4949</td>
+<td class="r data">5781</td>
+<td class="r data">7262</td>
+<td class="r data">9444</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURFOOD</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of purchases of food</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2632</td>
+<td class="r data">3837</td>
+<td class="r data">1878</td>
+<td class="r data">4344</td>
+<td class="r data">5361</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURFOOD</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of purchases of food</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">9563</td>
+<td class="r data">14368</td>
+<td class="r data">16524</td>
+<td class="r data">20577</td>
+<td class="r data">24816</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURALC</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of purchases of alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">693</td>
+<td class="r data">1114</td>
+<td class="r data">1063</td>
+<td class="r data">1466</td>
+<td class="r data">1470</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURALC</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of purchases of alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">108</td>
+<td class="r data">40</td>
+<td class="r data">20</td>
+<td class="r data">11</td>
+<td class="r data">46</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURALC</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of purchases of alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">406</td>
+<td class="r data">742</td>
+<td class="r data">950</td>
+<td class="r data">961</td>
+<td class="r data">1234</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURALC</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of purchases of alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1207</td>
+<td class="r data">1896</td>
+<td class="r data">2033</td>
+<td class="r data">2438</td>
+<td class="r data">2750</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURNONALC</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of purchases of non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">460</td>
+<td class="r data">837</td>
+<td class="r data">1025</td>
+<td class="r data">1353</td>
+<td class="r data">1987</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURNONALC</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of purchases of non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">370</td>
+<td class="r data">558</td>
+<td class="r data">366</td>
+<td class="r data">813</td>
+<td class="r data">965</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURNONALC</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of purchases of non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">110</td>
+<td class="r data">453</td>
+<td class="r data">258</td>
+<td class="r data">581</td>
+<td class="r data">497</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FPURNONALC</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of purchases of non-alcoholic beverages</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">940</td>
+<td class="r data">1848</td>
+<td class="r data">1649</td>
+<td class="r data">2747</td>
+<td class="r data">3431</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOTHERPURCH</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Details of purchases of other purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">351</td>
+<td class="r data">482</td>
+<td class="r data">673</td>
+<td class="r data">841</td>
+<td class="r data">941</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOTHERPURCH</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Details of purchases of other purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">92</td>
+<td class="r data">185</td>
+<td class="r data">237</td>
+<td class="r data">532</td>
+<td class="r data">547</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOTHERPURCH</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Details of purchases of other purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">118</td>
+<td class="r data">231</td>
+<td class="r data">260</td>
+<td class="r data">249</td>
+<td class="r data">464</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FOTHERPURCH</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Details of purchases of other purchases</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">561</td>
+<td class="r data">898</td>
+<td class="r data">1170</td>
+<td class="r data">1622</td>
+<td class="r data">1952</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIINDIV</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Income from sales of goods and services from individuals and households</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">9730</td>
+<td class="r data">15397</td>
+<td class="r data">20194</td>
+<td class="r data">22682</td>
+<td class="r data">31874</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIINDIV</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Income from sales of goods and services from individuals and households</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6176</td>
+<td class="r data">10433</td>
+<td class="r data">12605</td>
+<td class="r data">16020</td>
+<td class="r data">23016</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIINDIV</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Income from sales of goods and services from individuals and households</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1559</td>
+<td class="r data">2349</td>
+<td class="r data">3263</td>
+<td class="r data">4226</td>
+<td class="r data">4792</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIINDIV</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Income from sales of goods and services from individuals and households</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">17465</td>
+<td class="r data">28179</td>
+<td class="r data">36062</td>
+<td class="r data">42928</td>
+<td class="r data">59682</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIBUSI</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Income from sales of goods and services from businesses</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">2293</td>
+<td class="r data">1258</td>
+<td class="r data">3434</td>
+<td class="r data">4019</td>
+<td class="r data">1223</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIBUSI</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Income from sales of goods and services from businesses</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1207</td>
+<td class="r data">266</td>
+<td class="r data">595</td>
+<td class="r data">1284</td>
+<td class="r data">373</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIBUSI</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Income from sales of goods and services from businesses</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">3598</td>
+<td class="r data">5219</td>
+<td class="r data">2382</td>
+<td class="r data">5467</td>
+<td class="r data">7211</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIBUSI</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Income from sales of goods and services from businesses</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7098</td>
+<td class="r data">6743</td>
+<td class="r data">6411</td>
+<td class="r data">10770</td>
+<td class="r data">8807</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIGOV</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Income from sales of goods and services from government</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">65</td>
+<td class="r data">275</td>
+<td class="r data">206</td>
+<td class="r data">363</td>
+<td class="r data">148</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIGOV</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Income from sales of goods and services from government</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">22</td>
+<td class="r data">53</td>
+<td class="r data">42</td>
+<td class="r data">61</td>
+<td class="r data">69</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIGOV</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Income from sales of goods and services from government</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1280</td>
+<td class="r data">839</td>
+<td class="r data">164</td>
+<td class="r data">192</td>
+<td class="r data">1285</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FIGOV</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Income from sales of goods and services from government</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">1367</td>
+<td class="r data">1167</td>
+<td class="r data">412</td>
+<td class="r data">616</td>
+<td class="r data">1502</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FISALESERV</td>
+<td class="l data">Restaurants and coffee shops</td>
+<td class="l data">64201</td>
+<td class="l data">Total income from sales of goods and services rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">12088</td>
+<td class="r data">16930</td>
+<td class="r data">23834</td>
+<td class="r data">27064</td>
+<td class="r data">33245</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FISALESERV</td>
+<td class="l data">Takeaway and fast-food outlets</td>
+<td class="l data">64203</td>
+<td class="l data">Total income from sales of goods and services rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">7405</td>
+<td class="r data">10752</td>
+<td class="r data">13242</td>
+<td class="r data">17365</td>
+<td class="r data">23458</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FISALESERV</td>
+<td class="l data">Caterers and other catering services</td>
+<td class="l data">64204</td>
+<td class="l data">Total income from sales of goods and services rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">6437</td>
+<td class="r data">8407</td>
+<td class="r data">5809</td>
+<td class="r data">9885</td>
+<td class="r data">13228</td>
+</tr>
+<tr>
+<td class="l data">Report No. 64-20-01</td>
+<td class="l data">Food and beverages industry</td>
+<td class="l data">FISALESERV</td>
+<td class="l data">All</td>
+<td class="l data">Total</td>
+<td class="l data">Total income from sales of goods and services rendered</td>
+<td class="l data">South Africa</td>
+<td class="l data">Current prices</td>
+<td class="l data">R million</td>
+<td class="r data">2018</td>
+<td class="r data">2007</td>
+<td class="l data">Periodically</td>
+<td class="r data">25930</td>
+<td class="r data">36089</td>
+<td class="r data">42885</td>
+<td class="r data">54314</td>
+<td class="r data">69991</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+</body>
+</html>
