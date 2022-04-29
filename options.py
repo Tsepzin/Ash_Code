@@ -7,6 +7,7 @@ from my_functions import ytm_model
 from my_functions import price_model
 import QuantLib as ql
 
+
 pd.set_option('mode.chained_assignment', None)
 
 funds = pd.read_excel(r'\\rmb-vpr-file02\Ashburton\Support Services\Risk Management\Investment Analytics\Python\take_on\config\ir_sensitivity.xlsx', sheet_name='funds')

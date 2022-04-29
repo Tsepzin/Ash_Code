@@ -1,0 +1,1 @@
+"C:\Users\XTW\OneDrive - FRG\Documents\R\R-3.5.2\bin\R.exe" CMD BATCH "\\rmb-vpr-file02\Ashburton\Support Services\Risk Management\Investment Analytics\Python\take_on\scripts\R_group_treasury_charts.R"
