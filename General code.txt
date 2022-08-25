@@ -1,0 +1,231 @@
+import pandas as pd
+import numpy as np
+file = pd.read_csv('Q:/IMAPS/BTQData/GEM/Reports/Monthly/30.11.2017/Input Data/IRISReturnsUSD.csv')
+file.columns = ['Security','Date','Return']
+file.head()
+grouping = file.groupby('Security').count()
+grouping[grouping['Date']<260]
+
+import matplotlib.pyplot as plt
+
+=====================================================================================================================================================================================================
+
+
+import pandas as pd
+import numpy as np
+
+# Importing 4 hedge funds portfolios
+file = pd.read_csv('S:/QRU/Hedge Funds_SFB/hedgefunds.csv',usecols=[1,3,14])
+file_output = file[(file['Portfolio_Code'] == 'OMCQHF') | (file['Portfolio_Code'] == 'OMAOHF') | (file['Portfolio_Code'] == 'OMVAHF') | (file['Portfolio_Code'] == 'OMMAHF')]
+
+# Importing Top40 benchmark
+file = pd.read_csv('S:/Shared/hiport/CustomBenchmarks/20171212/NALS40.csv', header=None, usecols=[0,1,5])
+file.columns = ['Portfolio_Code','Instrument_Code','Value']
+file['Portfolio_Code'] = 'BM_' + file['Portfolio_Code']
+file = file[['Portfolio_Code','Instrument_Code','Value']]
+file_output = file_output.append(file)
+
+# Importing Capped SWIX40 benchmark
+file = pd.read_csv('S:/Shared/hiport/CustomBenchmarks/20171212/CSWX40.csv', header=None, usecols=[0,1,5])
+file.columns = ['Portfolio_Code','Instrument_Code','Value']
+file['Portfolio_Code'] = 'BM_' + file['Portfolio_Code']
+file = file[['Portfolio_Code','Instrument_Code','Value']]
+file_output = file_output.append(file)
+
+# Importing DTOP benchmark
+file = pd.read_csv('S:/Shared/hiport/CustomBenchmarks/20171212/SWIX40.csv', header=None, usecols=[0,1,5])
+file.columns = ['Portfolio_Code','Instrument_Code','Value']
+file['Portfolio_Code'] = 'BM_' + file['Portfolio_Code']
+file = file[['Portfolio_Code','Instrument_Code','Value']]
+file_output = file_output.append(file)
+
+# Replacing option codes with benchmark codes
+new_code = pd.ExcelFile('S:/QRU/Hedge Funds_SFB/Database.xlsx')
+new_code_df = pd.read_excel(new_code, 'CodeToMapNames')
+list_to_replace = new_code_df['Instrument_Code']
+list_replace_by = new_code_df['Converted']
+file_output.replace(list_to_replace,list_replace_by,inplace=True)
+
+#Output data
+#file_output = file_output.to_csv('S:/QRU/Hedge Funds_SFB/output.csv', index=False)
+
+# Importing I-Maps output
+file = pd.read_excel('S:/QRU/Hedge Funds_SFB/SelectedHoldings.xlsx', skiprows=[0,1],usecols=[1,2,3,4,5]).dropna()
+# Upper case for the security code
+file['Security'] = file['Security'].str.upper()
+
+# Pivot
+#file = file.pivot(index='Security', columns='Portfolio', values='Weight')
+
+
+cp = pd.ExcelFile('S:/QRU/Hedge Funds_SFB/Database.xlsx')
+cp_df = pd.read_excel(cp, 'Counterparty')
+# Upper case for the security code
+newfile['Security'] = newfile['Security'].str.upper()
+file1 = pd.merge(file, newfile, on='Security', how ='left')
+
+#file_output = file1.to_excel('S:/QRU/Hedge Funds_SFB/output1.xlsx', index=False)
+
+
+# Group by counterparty and filter by portfolio
+cp_group_OMCQHF_df = file1[file1['Portfolio']=='OMCQHF'].groupby('Counterparty')['Counterparty','Weight'].sum()
+cp_group_OMAOHF_df = file1[file1['Portfolio']=='OMAOHF'].groupby('Counterparty')['Counterparty','Weight'].sum()
+cp_group_OMVAHF_df = file1[file1['Portfolio']=='OMVAHF'].groupby('Counterparty')['Counterparty','Weight'].sum()
+cp_group_OMMAHF_df = file1[file1['Portfolio']=='OMMAHF'].groupby('Counterparty')['Counterparty','Weight'].sum()
+writer = pd.ExcelWriter('S:/QRU/Hedge Funds_SFB/CP_Report.xlsx')
+cp_group_OMCQHF_df.to_excel(writer, 'OMCQHF')
+cp_group_OMAOHF_df.to_excel(writer, 'OMAOHF')
+cp_group_OMVAHF_df.to_excel(writer, 'OMVAHF')
+cp_group_OMMAHF_df.to_excel(writer, 'OMMAHF')
+writer.save()
+
+
+# Missing counterparty
+missing_cp_df = file1[file1['Counterparty'].isnull()]
+#missing_cp_df = missing
+missing_cp_df.drop_duplicates(['Portfolio'], keep='last')
+missing_cp_df.to_excel('S:/QRU/Hedge Funds_SFB/MissingCounterparty.xlsx', index=False)
+
+
+
+=============================================================================================
+# Show different files
+from filecmp import dircmp
+def print_diff_files(dcmp):
+	for name in dcmp.diff_files:
+		print (name, dcmp.left,dcmp.right)
+	for sub_dcmp in dcmp.subdirs.values():
+		print_diff_files(sub_dcmp)
+
+# Compare basedata
+dcmp = dircmp('V:/basedata', '//ZAWCSMB00/rsk_dev_data_common/basedata') 
+print_diff_files(dcmp)
+
+# Compare RM_DATA
+dcmp = dircmp('U:/RM_DATA/current', '//ZAWCSMB00/rsk_dev_data_omigsa/RM_DATA/current') 
+print_diff_files(dcmp)
+
+# Compare RW_DATA
+dcmp = dircmp('U:/RW_DATA/current', '//ZAWCSMB00/rsk_dev_data_omigsa/RW_DATA/current') 
+print_diff_files(dcmp)
+
+# Compare ASE DATA
+dcmp = dircmp('U:/ASE_DATA/FixedInbox', '//ZAWCSMB00/rsk_dev_data_omigsa/ASE_DATA/FixedInbox') 
+print_diff_files(dcmp)
+dcmp = dircmp('U:/ASE_DATA/Inbox', '//ZAWCSMB00/rsk_dev_data_omigsa/ASE_DATA/Inbox') 
+print_diff_files(dcmp)
+
+# Compare ASE SCENARIOS
+dcmp = dircmp('V:/asescenarios', '//ZAWCSMB00/rsk_dev_data_common/asescenarios') 
+print_diff_files(dcmp)
+
+
+# Compare OMIGSA Reports
+dcmp = dircmp('U:/reports', '//zawcsmb00/rsk_dev_data_4.9_omigsa/reports') 
+print_diff_files(dcmp)
+
+
+==============================================================================================
+
+import datetime
+now = datetime.datetime.now()
+now = now.strftime("%Y-%m-%d")
+
+===============================================================================================
+# GEM
+import pandas as pd
+import numpy as np
+import datetime
+data_df = pd.read_excel(r'Q:\IMAPS\BTQData\GEM\Reports\Monthly\20171231\OMEMMF.xlsx', sheetname = '31122017', skiprows =[0], header=0, usecols=[0,1,6], names=['Portfolio', 'Security', 'Value'])
+data_df['Weight'] = data_df['Value'] / data_df['Value'].sum()
+data_df.to_csv(r'Q:\IMAPS\BTQData\GEM\Reports\Monthly\20171231\PortHoldings.csv', index=False)
+data_df.head()
+
+return_df = pd.read_csv(r'Q:\IMAPS\BTQData\GEM\Reports\Monthly\20171231\IRISReturnsUSD.csv', names=['Security','Date','Return'])
+return_df.head()
+
+
+# Select returns for securities in the PortHoldings
+return_df = pd.merge(return_df,data_df,on='Security', how ='left')
+return_df = return_df.dropna()
+return_df = return_df[['Security','Date','Return']]
+
+# Append return for local shares
+loc_return_df = pd.read_excel(r'Q:\IMAPS\BTQData\GEM\Reports\Monthly\20171231\Usd_Jse_Prices_FromIris_Template.xlsx', sheetname='Sheet2', index_col='Date')
+loc_return_df = loc_return_df.unstack().reset_index(name="value")
+loc_return_df.columns = ['Security','Date','Return']
+return_df = return_df.append(loc_return_df)
+
+
+# Replacing sedols with short names
+CodeToMapNames_df = pd.read_csv(r'Q:\IMAPS\BTQData\GEM\Reports\Monthly\20171231\CodeToMapNames.csv', names=['Security','ShortName','LongName'])
+return_df = pd.merge(return_df,CodeToMapNames_df,on='Security', how ='left')
+
+# Missing counterparty
+missing_sn_df = return_df[return_df['ShortName'].isnull()]
+missing_sn_df = missing_sn_df[['Security','ShortName','LongName']]
+missing_sn_df.drop_duplicates(['Security'], keep='last', inplace=True)
+missing_sn_df.to_csv(r'Q:\IMAPS\BTQData\GEM\Reports\Monthly\20171231\MissingShortNames.csv', index=False)
+
+#Select columns
+return_df = return_df[['ShortName','Date','Return']]
+
+# Export GEMReturnsUSD.csv
+return_df.to_csv(r'Q:\IMAPS\BTQData\GEM\Reports\Monthly\20171231\GEMReturnsUSD.csv', index=False)
+
+===================================================================================================================
+#Inserting data into Access Table	
+import pyodbc
+
+conn_str = (
+    r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
+    r'DBQ=C:\Users\tmoteuli\Documents\Python Books\IMapsHoldings.accdb;'
+    )
+cnxn = pyodbc.connect(conn_str)
+crsr = cnxn.cursor()
+
+SQL = "INSERT INTO HoldingConvert VALUES ('Tsepo','Tsepzin','Test')"
+query = crsr.execute(SQL)
+cnxn.commit()
+cnxn.close()
+
+#Export access dataframe to excel	
+import pyodbc
+import pandas as pd
+
+conn_str = (
+    r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
+    r'DBQ=C:\Users\tmoteuli\Documents\Python Books\IMapsHoldings.accdb;'
+    )
+cnxn = pyodbc.connect(conn_str)
+crsr = cnxn.cursor()
+
+SQL = "SELECT * FROM HoldingConvert"
+data = pd.read_sql_query(SQL, cnxn)
+cnxn.commit()
+cnxn.close()
+
+data.to_csv(r'C:\Users\tmoteuli\Documents\Python Books\Dataframe.csv', index=False)
+
+========================================================================================================================
+
+import os
+f = open(r'C:\Users\tmoteuli\Desktop\RW_DATA OMIGSA TESTING\RW_DATA.csv','w')
+for filename in os.listdir(r'U:\RW_DATA\current'):
+	if filename.endswith('.csv'):
+		f.write(filename + '\n')
+f.write('\n')
+f.close()
+
+f = open(r'S:\QRU\Python\RW_DATA.csv','a')
+for filename in os.listdir(r'\\ZAWCSMB00\rsk_dev_data_omigsa\RM_DATA\current'):
+	if filename.endswith('.csv'):
+		f.write(filename + '\n')
+f.close()
+
+
+
+
+
+
+
